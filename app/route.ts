@@ -19,7 +19,7 @@ export async function GET() {
     // 1. Configure and call the Gemini API
     const model = genAI.getGenerativeModel({ model: "gemini-flash-lite-latest" });
     const prompt =
-      "Generate a short, powerful, go-getter affirmation for today. It must be aggressive, motivational, and focused on personal growth and relentless action. Embody a 'get after it' energy. Keep it under 15 words. Return plain text.";
+      "Generate a short, powerful, affirmation for today. It must be aggressive, motivational, and focused on personal growth and relentless action. Embody a 'get after it' energy. Keep it under 15 words. Return plain text.";
 
     const request = {
       contents: [{ role: "user", parts: [{ text: prompt }] }],
